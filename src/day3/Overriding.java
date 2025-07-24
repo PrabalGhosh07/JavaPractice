@@ -5,26 +5,26 @@ public class Overriding {
 		Animal s0=new Animal();
 		Animal s1=new Animal2();
 		Animal s2=new Animal3();
-		s0.a();
-		s1.a();
-		s2.a();
+		s0.a("Cat");
+		s1.a("Dog");
+		s2.a("Tiger");
 		
 	}
 }
  class Animal{
-	 void a(){
-		 System.out.println("It is a cat");
+	 void a(String i){
+		 System.out.println("It is a "+i);
 	 }
  }
  class Animal2 extends Animal{
 	 @Override
-	 void a(){
-		 System.out.println("It is a dog");
+	 void a(String b){
+		 System.out.println("It is a "+b);
 	 }
  }
  class Animal3 extends Animal{
 	 @Override
-	 void a(){
-		 System.out.println("It is a tiger");
+	 void a(String b){
+		 System.out.println("It is a "+b);
 	 }
  }
