@@ -26,6 +26,6 @@ public class Bank_MutiThreading {
 	}
 	
 	public double getBalance() {
-		return balance;
+		return balance ;
 	}
 }
